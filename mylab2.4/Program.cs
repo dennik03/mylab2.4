@@ -13,7 +13,17 @@ namespace mylab2._4
             Console.WriteLine("Сравнение чисел по количествву цифр");
             Console.WriteLine("Введите первое число");
             // введем первое число
-            int num1 = int.Parse(Console.ReadLine()); 
+            int num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите второе число");
+            int num2 = int.Parse(Console.ReadLine());
+
+            if (num1 > num2)
+                Console.WriteLine($"{num1} больше");
+            else
+            {
+                Console.WriteLine($"{num2} больше");
+            }
+            Console.ReadKey();
         }
     }
 }
